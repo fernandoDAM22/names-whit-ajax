@@ -1,0 +1,46 @@
+:root{
+    --br: 1px solid black;
+    --br-soft: .5px solid black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**This is the container for the people*/
+.people{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333333;
+}
+/**This is the container for one person*/
+.element{
+    height: 80px;
+    width: 800px;
+    display: flex;
+    border: var(--br-soft);
+}
+/**This is the name of the person*/
+.element p{
+    height: 100%;
+    width: 80%;
+    background-color: #fcfaf9;
+}
+/**This is the age of the person*/
+.element h1{
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    background-color: #48e5c2;
+    border-left: var(--br);
+}
+.element p, .element h1{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
